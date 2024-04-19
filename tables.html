@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="css-js-photo/tables.css">
+    <link rel="icon" href="css-js-photo/photo-video-gif/photocss.jpeg">
+</head>
+<body>
+    <p>Практична робота №6 "Таблиці за допомогою css"</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Продукт</th>
+                <th>Ціна</th>
+                <th>Кількість</th>
+                <th>Всього</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Продукт A</td>
+                <td class="center">$20</td>
+                <td class="center">5</td>
+                <td class="right">$100</td>
+            </tr>
+            <tr class="highlight">
+                <td>Продукт B</td>
+                <td class="center">$30</td>
+                <td class="center">3</td>
+                <td class="right">$90</td>
+            </tr>
+            <tr>
+                <td>Продукт C</td>
+                <td class="center">$15</td>
+                <td class="center">8</td>
+                <td class="right">$120</td>
+            </tr>
+            <tr class="highlight">
+                <td>Продукт D</td>
+                <td class="center">$25</td>
+                <td class="center">4</td>
+                <td class="right">$100</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table id="editableTable">
+        <tr>
+          <th>Ім'я</th>
+          <th>Вік</th>
+          <th>Email</th>
+        </tr>
+      </table>
+      
+      <button onclick="addRow()">Додати</button>
+      
+      <button onclick="saveTable()">Зберегти</button>
+      
+      <script>
+        var table = document.getElementById("editableTable");
+
+function addRow() {
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+
+    cell1.contentEditable = true;
+    cell2.contentEditable = true;
+    cell3.contentEditable = true;
+    
+}
+
+function editRow(button) {
+    var row = button.parentNode.parentNode;
+    var cells = row.getElementsByTagName("td");
+    for (var i = 0; i < cells.length - 1; i++) {
+        cells[i].setAttribute("contenteditable", "true");
+    }
+    button.style.display = "none";
+    button.parentNode.querySelector(".saveBtn").style.display = "inline-block";
+}
+
+function saveRow(button) {
+    var row = button.parentNode.parentNode;
+    var cells = row.getElementsByTagName("td");
+    for (var i = 0; i < cells.length - 1; i++) {
+        cells[i].setAttribute("contenteditable", "false");
+    }
+    button.style.display = "none";
+    button.parentNode.querySelector(".editBtn").style.display = "inline-block";
+}
+
+function saveTable() {
+    var data = [];
+    var rows = table.rows;
+    for (var i = 1; i < rows.length; i++) {
+        var cells = rows[i].cells;
+        var rowData = [];
+        for (var j = 0; j < cells.length - 1; j++) {
+            rowData.push(cells[j].innerText);
+        }
+        data.push(rowData);
+    }
+    
+    console.log(data);
+    alert("Збережено дані!");
+}
+
+      </script>
+
+
+
+</body>
+</html>

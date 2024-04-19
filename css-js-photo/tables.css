@@ -1,0 +1,68 @@
+body {
+    background-image: url(https://vynnyky-visnyk.com.ua/wp-content/uploads/2023/05/pace-oregon-state-html-css-codin-1024x576.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    font-size: 68px;
+    text-align: center;
+    background: linear-gradient(to left, red, blue, green, red, blue, green);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+table {
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: lightseagreen;
+    margin: 30px 20px;;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    height: 1cm;
+}
+
+th {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #f5f5;
+}
+
+td:hover{
+    background-color: lawngreen;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #ffddcc;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.edit {
+    display: none;
+}

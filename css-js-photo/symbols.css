@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(0deg, #ffd700 50%, #005bbb 50%);
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  100px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 0.7cm;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcP4yEtyp0LbKenW5Av0oTptAMcovgTFaL3ypkZOnZ8x9kjR_61SNEjkN7Ku-b7ery8wI&usqp=CAU);
+    background-size: 100% 50%;
+}
+
+h1 {
+    color: #007bff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.p2{
+    font-family: "Rubik Bubbles", system-ui;
+    font-optical-sizing: auto;
+}
+
+.highlight {
+    color: #28a745;
+    font-family: "Rubik Broken Fax", system-ui;
+}
+
+.text-underline {
+    color: purple;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-position: under;
+    text-decoration-color: black;
+}
+
+.text-shadow {
+    text-shadow: 5px 5px 10px black;
+}
+
+.font-example {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-properties {
+    list-style: none;
+    padding-left: 0;
+}
+
+.font-properties li {
+    margin-bottom: 5px;
+}
+.pacifico-regular{
+    font-family: "Pacifico", cursive;
+}
+.h33{
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+}

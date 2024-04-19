@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична робота №7 "Headlines"</title>
+  <link rel="stylesheet" href="css-js-photo/headlines.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png">
+</head>
+<body>
+  <p>Практична робота №7 "Заголовки"</p>
+  <div>
+  <h1>Звіт про дослідження <abbr title="JavaScript - це одна з мов програмування." style="text-decoration: none;">JavaScript_</abbr></h1>
+  <h2>Вступ до JavaScript_</h2>
+  <button id="toggleButton">Показати логотип JavaScript</button>
+  <figure id="content" style="display: none;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="LogoJavaScript">
+    <figcaption class="h2">На зображенні JavaScript_</figcaption>
+  </figure>
+  <h3>Розгляньмо, що такого особливого в мові JavaScript, чого ми можемо досягти за її допомогою та які ще технології пов’язані з нею.</h3>
+  <h2>Особливості JavaScript_</h2>
+  <h3>
+    <ul>
+      <li>JavaScript просто незамінний для веб-розробки. Він відмінно інтегрується з версткою та серверною частиною (фронтенд та бекенд).</li>
+      <li>JavaScript швидкий та продуктивний. Частина запитів обробляється безпосередньо на пристрої користувача, що набагато швидше та ефективніше, ніж кожного разу звертатися до сервера.</li>
+      <li>JavaScript має відмінну екосистему та величезне ком'юніті. Знайти рішення будь-якого завдання можна без особливих проблем.</li>
+      <li>JavaScript простий та раціональний у використанні. Багато нескладних завдань вирішуються за його допомогою буквально за пару хвилин. Але і для складних завдань він підходить чудово.</li>
+      <li>JavaScript залишається найпростішим для освоєння мовою програмування. Звичайно, спочатку складнощі будуть, але синтаксис цілком доступний і зрозумілий. Після вивчення HTML і CSS майбутні розробники здебільшого вивчають саме JavaScript.</li>
+    </ul>
+  </h3>
+  <h2>Як вставити JavaScript в HTML сторінку_</h2>
+  <pre><code class="language-javascript">
+    <span>// Приклад функції на JavaScript</span>
+    function greet(name) {
+      return 'Привіт, ' + name + '!';
+    }
+    
+    console.log(greet('Світ')); <span>// Виведе "Привіт, Світ!"</span>
+      </code></pre>
+  <h2>Історія JavaScript в YouTube_</h2>
+  <iframe src="https://www.youtube.com/embed/KXoJG5XfwPM" frameborder="0" allowfullscreen class="video-container" width="800" height="450" style="margin: 20px;"></iframe>
+  <h2>Приклад оголошення і використання класу в JavaScript_</h2>
+  <pre>
+    <code class="language-javascript">
+      <span>class</span> MyClass {
+        <span>constructor</span>() {
+          <span>this</span>.myValue1 = 1;
+          <span>this</span>.myValue2 = 2;
+        }
+      }
+      
+      <span>const</span> mc = <span class="span-1">new</span> MyClass();
+      mc.myValue1 = mc.myValue2 * 2;
+    </code>
+  </pre>
+  <h2>JavaScript має C-подібний синтаксис, але в порівнянні з мовою C має такі корінні відмінності_</h2>
+  <h3>
+    <ul>
+      <li>об'єкти, з можливістю інтроспекції і динамічної зміни типу через механізм прототипів</li>
+      <li>функції як об'єкти першого класу</li>
+      <li>обробка винятків</li>
+      <li>автоматичне приведення типів</li>
+      <li>автоматичне збирання сміття</li>
+      <li>анонімні та стрілочні функції</li>
+    </ul>
+  </h3>
+  <h2>Актуальний стан</h2>
+  <figure class="f2">
+    <img src="https://s.dou.ua/img/announces/dou-tech23_cover-840x460.png" alt="Рейтинг">
+    <figcaption>Рейтинг мов програмування_</figcaption>
+  </figure>
+  <h3><q>JavaScript, наразі, є однією з найпопулярніших мов програмування в інтернеті. В перші роки існування, більшість професійних програмістів скептично ставилися до мови, цільова аудиторія якої складалася з програмістів-аматорів. <br><br> Поява AJAX змінила ситуацію та звернула увагу професійної спільноти до мови, а її подальші модифікації за стандартами ES6+ внесли багато корисних можливостей, яких не вистачало для ефективного програмування. <br><br>В результаті, були розроблені та покращені багато практик використання JavaScript (зокрема, тестування та налагодження), створені бібліотеки та фреймворки, поширилося використання JavaScript поза браузером.
+      <br><br>В 2023 році, у категорії найпопулярніших мов програмування серед IT-спеціалістів згідно рейтингу IEEE Spectrum, який охоплював 59 мов програмування, топ-5 виглядав так: <a href="https://uk.wikipedia.org/wiki/Python">Python</a>, <a href="https://uk.wikipedia.org/wiki/Java">Java</a>, <a href="https://uk.wikipedia.org/wiki/C%2B%2B">C++</a>, <a href="https://uk.wikipedia.org/wiki/C_(мова_програмування)">C</a>, <a href="https://uk.wikipedia.org/wiki/JavaScript">JavaScript.</a></q></h3>
+  </div>
+  <script>
+    const content = document.getElementById('content');
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', function() {
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        toggleButton.textContent = 'Приховати логотип JavaScript';
+    } else {
+        content.style.display = 'none';
+        toggleButton.textContent = 'Показати логотип JavaScript';
+    }
+});
+  </script>
+</body>
+</html>

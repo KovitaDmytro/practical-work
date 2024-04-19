@@ -1,0 +1,58 @@
+body {
+    background-color: #fff;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Outline_of_Ukraine.svg/1187px-Outline_of_Ukraine.svg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: 65%;
+}
+
+p {
+    background-image: url(https://cdn.pixabay.com/animation/2022/09/16/16/43/16-43-27-842_512.gif);
+    font-size: 1.5cm;
+    background-size: 100% 50%;
+    color: #000;
+    text-align: centers;
+    margin: 0 auto;
+    width: 50%;
+}
+div{
+    margin: 70px;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+#d1{
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-ukraine-map-flag-colours_1048-15620.jpg?w=360);
+    background-repeat: no-repeat;
+    border: ridge 0.5cm green;
+    width: 300px;
+    
+}
+#d2{
+    background-image: url(https://news.virginia.edu/sites/default/files/Header_NA_Ukraine_Map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: ridge 0.5cm blue ;
+    width: 300px;
+    border-radius: 34%;
+    box-shadow: 0 0 100px yellow;
+    
+}
+#d3{
+    background-repeat: no-repeat;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShi8kKoT1ZYyfam-OeMZz8zOwDZ5oKC0hXww&usqp=CAU);
+    background-size: cover;
+    width: 300px;
+    border: ridge 0.5cm;
+    box-shadow: 10px 30px 200px red;
+}
+#img1{
+    margin: 100px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    border: ridge 1cm yellow;
+    box-shadow: 0 0 100px blue;
+}

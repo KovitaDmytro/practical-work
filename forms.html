@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Forms</title>
+    <link rel="stylesheet" href="css-js-photo/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="css-js-photo/practical9.js"> </script>
+</head>
+<body>
+    <div class="div1">
+        <span class="span1"><a href="index.html" class="a1">Ковіта Дмитро Володимирович</a></span>
+     </div>
+     <div class="div2">
+        <p class="p2">Практичні роботи з Основ WEB-дизайну</p>
+     </div> 
+     <div class="div3">
+        <ul>
+            <li class="li1"><a href="information-html.css" class="a1a1">HTML</a></li>
+            <li class="li1"><a href="#" class="a1a1" id="css12345">CSS</a></li>
+            <li class="li1"><a href="#" class="a1a1" id="js12345">JavaScript</a></li>
+        </ul>        
+      </div>
+     <div class="div4">
+    <!-- Форма для виведення вітання -->
+    <label for="name">Введіть ваше ім'я:</label>
+    <input type="text" id="name">
+    <button onclick="sayHello()">Привітатися</button>
+    <hr>
+
+    <!-- Форма для калькулятора -->
+    <label for="num1">Введіть перше число:</label>
+    <input type="text" id="num1">
+    <label for="num2">Введіть друге число:</label>
+    <input type="text" id="num2">
+    <button onclick="calculateSum()">Обчислити суму</button>
+    <div id="sumResult"></div>
+    <hr>
+
+    <!-- Форма для генератора випадкового числа -->
+    <label for="min">Мінімальне значення:</label>
+    <input type="text" id="min">
+    <label for="max">Максимальне значення:</label>
+    <input type="text" id="max">
+    <button onclick="generateRandom()">Згенерувати випадкове число</button>
+    <div id="randomResult"></div>
+    <hr>
+
+    <!-- Форма для перевірки пароля -->
+    <label for="password">Введіть пароль:</label>
+    <input type="password" id="password">
+    <button onclick="checkPasswordStrength()">Перевірити силу пароля</button>
+    <div id="passwordStrength"></div>
+    <hr>
+
+    <!-- Форма для обчислення факторіала числа -->
+    <label for="number">Введіть число для факторіала:</label>
+    <input type="text" id="number">
+    <button onclick="calculateFactorial()">Обчислити факторіал</button>
+    <div id="factorialResult"></div>
+    <hr>
+
+    <!-- Форма для перевірки на просте число -->
+    <label for="prime">Введіть число для перевірки на просте:</label>
+    <input type="text" id="prime">
+    <button onclick="checkPrime()">Перевірити на просте число</button>
+    <div id="primeResult"></div>
+    <hr>
+
+    <!-- Форма для реверсу рядка -->
+    <label for="inputString">Введіть рядок для реверсу:</label>
+    <input type="text" id="inputString">
+    <button onclick="reverseString()">Реверс рядка</button>
+    <div id="reversedString"></div>
+    <hr>
+
+    <!-- Форма для перевірки на паліндром -->
+    <label for="palindrome">Введіть слово для перевірки на паліндром:</label>
+    <input type="text" id="palindrome">
+    <button onclick="checkPalindrome()">Перевірити на паліндром</button>
+    <div id="palindromeResult"></div>
+    <hr>
+
+    <!-- Форма для знаходження максимального числа -->
+    <label for="numberList">Введіть числа через кому:</label>
+    <input type="text" id="numberList">
+    <button onclick="findMax()">Знайти найбільше число</button>
+    <div id="maxNumber"></div>
+    </div>
+    <hr>
+
+</body>
+</html>

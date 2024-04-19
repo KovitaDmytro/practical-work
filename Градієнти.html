@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Особливі градієнти</title>
+  <style>
+    body > div {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      display: inline-block;
+    }
+   
+  </style>
+</head>
+<body>
+  <!-- Градієнти -->
+  <div style="background: linear-gradient(to right, red, yellow);"></div>
+  <div style="background: linear-gradient(45deg, blue, green);"></div>
+  <div style="background: linear-gradient(90deg, orange, purple, pink, white);"></div>
+  <div style="background: linear-gradient(135deg, gray, brown, beige, ivory);"></div>
+  <div style="background: linear-gradient(-45deg, gold, darkorange);"></div>
+  <div style="background: linear-gradient(-90deg, lightseagreen, lavender);"></div>
+  <div style="background: linear-gradient(225deg, salmon, plum);"></div>
+  <div style="background: linear-gradient(315deg, skyblue, steelblue);"></div>
+  
+  <div style="background: radial-gradient(circle, pink, purple);"></div>
+  <div style="background: radial-gradient(ellipse at center, lightpink, hotpink);"></div>
+  <div style="background: radial-gradient(circle, tomato, sandybrown, tomato);border-radius: 50%;"></div>
+  <div style="background: radial-gradient(circle, limegreen, palegreen, limegreen);"></div>
+  <div style="background: radial-gradient(circle, orangered, darkorange, gold, chartreuse, lime);"></div>
+  <div style="background: radial-gradient(circle at 100px 25px, tomato, orange, gold, yellow, lemonchiffon);"></div>
+  <div style="background: radial-gradient(circle, mediumturquoise, mediumaquamarine, aqua);"></div>
+  <div style="background: radial-gradient(circle, cornflowerblue, royalblue, deepskyblue);border-radius: 25%;"></div>
+  
+  <div style="background: conic-gradient(pink, purple, lightpink, hotpink, tomato, sandybrown, limegreen, palegreen);"></div>
+  <div style="background: conic-gradient(from -45deg, gold, darkorange); border-radius: 25%;"></div>
+  <div style="background: conic-gradient(from 90deg, lightseagreen, lavender);"></div>
+  <div style="background: conic-gradient(from 135deg, salmon, plum, lightpink, hotpink, tomato, sandybrown, limegreen, palegreen);"></div>
+  <div style="background: conic-gradient(from 180deg, skyblue, steelblue);"></div>
+  <div style="background: conic-gradient(from 225deg, cornflowerblue, royalblue, deepskyblue);"></div>
+  <div style="background: conic-gradient(from 270deg, tomato, orange, gold, yellow, lemonchiffon);"></div>
+  <div style="background: conic-gradient(from 315deg, gold, darkorange, limegreen, palegreen, lime);"></div>
+  <div class="stacked-radial" style="width: 200px; height: 200px; background: radial-gradient(circle at 50% 0, rgb(255 0 0 / 50%), rgb(255 0 0 / 0%) 70.71% ),radial-gradient( circle at 6.7% 75%,rgb(0 0 255 / 50%), rgb(0 0 255 / 0%) 70.71%), radial-gradient(  circle at 93.3% 75%,  rgb(0 255 0 / 50%), rgb(0 255 0 / 0%) 70.71%) beige; border-radius: 50%;"></div>
+
+  <div style="background: repeating-linear-gradient(45deg, gold, gold 10px, mediumseagreen 10px, mediumseagreen 20px);"></div>
+  <div style="background: repeating-linear-gradient(90deg, salmon, salmon 20px, plum 20px, plum 40px);"></div>
+  <div style="background: repeating-linear-gradient(-45deg, darkgoldenrod, darkgoldenrod 20px, skyblue 20px, skyblue 40px);"></div>
+  <div style="background: repeating-linear-gradient(-90deg, mediumturquoise, mediumturquoise 30px, aqua 30px, aqua 60px);"></div>
+  <div style="background: repeating-radial-gradient(circle at 225px 75px, tomato, darkorange 10%, gold 20%);"></div>
+  <div style="background: repeating-radial-gradient(circle, mediumturquoise, mediumaquamarine 10%, aqua 20%);"></div>
+  <div style="background: repeating-radial-gradient(circle, cornflowerblue 0 10%, royalblue 10% 20%, deepskyblue 20% 30%);"></div>
+  <div style="background: repeating-radial-gradient(circle, gold, darkorange 10%, limegreen 20%, palegreen 30%, lime 40%);"></div>
+  <div style="background: linear-gradient(to right, #666, #999);"></div>
+  <div style="background: repeating-linear-gradient(-45deg, #6699ff, #6699ff 10px, #3366ff 10px, #3366ff 20px);border-radius: 40%;"></div>
+  <div style="background: radial-gradient(circle, #ff758c, #ff7eb3 50%, transparent 60%);"></div>
+  <div style="position: relative; overflow: hidden; width: 200px; height: 200px; margin: 20px; display: inline-block;">
+    <div style="position: absolute; top: 0; left: -200px; width: 300px; height: 200px; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red); animation: animateGradient 5s linear infinite;"></div>
+  </div>
+  <style>
+    @keyframes animateGradient {
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
+</body>
+</html>
+
