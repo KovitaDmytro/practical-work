@@ -78,15 +78,14 @@ ul{
     background-color: rgb(221, 221, 221);
 }
 
-.div-center{
-    block-size: auto;
+.div-block{
+    display: flex;
 }
 
-.block-div{
-    display: inline-block;
-    max-width: max-content; 
-    margin-top: auto; 
-    margin-left: 15px;
+.home-div{
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .li2 {
