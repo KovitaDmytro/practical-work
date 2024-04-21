@@ -17,12 +17,6 @@ css1234.addEventListener('click', function(event) {
    alert('Вибачте, ця сторінка поки не готова!');
 });
 
-var js1234 = document.getElementById('js1234');
-
-js1234.addEventListener('click', function(event) {
-   event.preventDefault();
-   alert('Вибачте, ця сторінка поки не готова!');
-});
 
 var link9 = document.getElementById('practice11');
 
