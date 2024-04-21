@@ -24,7 +24,6 @@ body {
     text-decoration: none;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 
@@ -40,7 +39,6 @@ p.p2 {
     color: rgb(0, 68, 156);
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 
@@ -48,7 +46,7 @@ p.p2 {
     background-color: rgba(255, 234, 0, 0.949);
 }
 
-.div3{
+header{
     background-color: white;
     margin-top: auto;
     margin-bottom: auto;
