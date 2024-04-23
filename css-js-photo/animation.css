@@ -31,7 +31,7 @@ body {
     color: black;
 }
 
-p.p2 {
+.p2 {
     font-size: 50px;
     padding: 30px 150px;
     margin-top: auto;
@@ -105,6 +105,26 @@ ul{
     font-size: 20px;
 }
 
+.div-animation-marquee {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: auto;
+    overflow: hidden; /* Додав overflow для скриття тексту, що виходить за межі */
+    background-color: yellow;
+}
+
+.p5 {
+    animation: div-animation-marquee 5s linear infinite;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+@keyframes div-animation-marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
 .marquee-down{
     background-color: yellow;
     width: 250px;
@@ -121,3 +141,23 @@ ul{
     color: black;
     font-size: 20px;
 }
+
+.div-animation-metod{
+    position: relative;
+    animation-name: example11;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+@keyframes example11{
+    0%{background-color: red; left: 0px; top: 300px}
+    20%{background-color: yellow; left: 200px; top: 0px}
+    40%{background-color: green; left: 200px; top: 300px}
+    60%{background-color: blue; left: 200px; top: 0px}
+    80%{background-color: violet; left: 0px; top: 0px}
+    100%{background-color: black; left: 0px; top: 300px}
+}
+
