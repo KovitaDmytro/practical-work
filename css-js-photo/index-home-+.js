@@ -18,12 +18,12 @@ css1234.addEventListener('click', function(event) {
 });
 
 
-var link9 = document.getElementById('practice11');
+/*var link9 = document.getElementById('practice11');
 
 link9.addEventListener('click', function(event) {
    event.preventDefault();
    alert('Вибачте, ця сторінка поки не готова!');
-});
+}); */
 
 var link9 = document.getElementById('practice12');
 
