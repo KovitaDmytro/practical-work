@@ -1,0 +1,202 @@
+body {
+    background-image: url(https://kartinki.pics/uploads/posts/2022-12/thumbs/1669935685_4-kartinkin-net-p-fon-dlya-saita-svetlii-vkontakte-4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.div1{
+    background-color: #007bff;
+    text-align:right;
+}
+
+.span1{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3px 5px;
+}
+
+.a1{
+    padding-right: 20px;
+    padding: 2px 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.a1:hover{
+    color: black;
+}
+
+.p2 {
+    font-size: 50px;
+    padding: 30px 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(0, 68, 156);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.div2{
+    background-color: rgba(255, 234, 0, 0.949);
+}
+
+header{
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ul{
+    display: flex;
+    margin-top: auto;
+}
+
+.li1{
+    list-style: none;
+    font-size: 24px;
+    color: black;
+
+}
+
+.a1a1{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    display: block;
+    padding: 10px 25px;
+}
+
+.a1a1:hover{
+    color: black;
+    background-color: rgb(221, 221, 221);
+}
+
+.white-block{
+    background-color: white;
+    border: 2px double black;
+    margin: 50px;
+}
+
+.block-div-2{
+    display: block;
+}
+
+.block-div{
+    display: inline-block;
+}
+
+#first{
+   width: 200px;
+    height: 40px;
+    background-color: red;
+    margin: 30px;
+}
+
+#first:hover{
+    background-color: #ff6363;
+}
+
+#second{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    margin: 30px 25px;
+}
+
+#second:hover{
+    background-color: #ffbd43;
+}
+
+#second-1{
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+    margin: 30px 25px;
+}
+
+#second-1:hover{
+    background-color: #ffff4b;
+}
+
+#second-2{
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    margin: 30px 25px;
+}
+
+#second-2:hover{
+    background-color: #00ae00;
+}
+
+#second-3{
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    margin: 30px 25px;
+}
+
+#second-3:hover{
+    background-color: #4848fd;
+}
+
+#second-4{
+    width: 200px;
+    height: 40px;
+    background-color: #007bff;
+    margin: 30px 25px;
+}
+
+#second-4:hover{
+    background-color: #49a3fb;
+}
+
+#second-5{
+    width: 200px;
+    height: 40px;
+    background-color: violet;
+    margin: 30px 25px;
+}
+
+#second-5:hover{
+    background-color: #ffa9ff;
+}
+
+.block-square{
+    background-color: red;
+    width: 370px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    border: 20px solid blue;
+    border-style: double dashed ridge;
+}
+
+.block-ul{
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.block-ul li{
+    list-style: none;
+    font-size: 50px;
+    padding: 10px 15px;
+
+}
+
+.block-ul li:hover{
+    background-color: #ffffff;
+}
