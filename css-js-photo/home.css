@@ -96,6 +96,15 @@ aside{
     color: rgb(21, 21, 21);
 }
 
+.gif-home{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.gif-home > img{
+    width: 200px;
+}
+
 .home-main-zoom{
     width: 250px;
     float: left;
