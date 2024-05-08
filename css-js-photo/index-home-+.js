@@ -37,14 +37,14 @@ var link9 = document.getElementById('practice13');
 link9.addEventListener('click', function(event) {
    event.preventDefault();
    alert('Вибачте, ця сторінка поки не готова!');
-});*/
+});
 
 var link9 = document.getElementById('practice14');
 
 link9.addEventListener('click', function(event) {
    event.preventDefault();
    alert('Вибачте, ця сторінка поки не готова!');
-});
+});*/
 
 var link9 = document.getElementById('practice15');
 
