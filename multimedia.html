@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Практична робота № 13</title>
-    <link rel="stylesheet" type="text/css" href="css-js-photo/site.css">
+    <link rel="stylesheet" type="text/css" href="css-js-photo/multimedia.css">
     <link rel="icon" href="css-js-photo/photo-video-gif/photocss.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +32,52 @@
             <source src="css-js-photo/photo-video-gif/gimn-ukrainy-minus.mp3">
         </audio>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.867925075842!2d30.37081849498794!3d50.451643171400775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc8fa24d09c3%3A0xf9ed233d151e7c38!2z0JLRltC00LrRgNC40YLQuNC5INC80ZbQttC90LDRgNC-0LTQvdC40Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgiDRgNC-0LfQstC40YLQutGDINC70Y7QtNC40L3QuCAi0KPQutGA0LDRl9C90LAi!5e0!3m2!1suk!2sua!4v1715108133269!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <svg width="200" height="200">
+            <defs>
+                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="50" y="50" width="100" height="100" fill="url(#grad)"/>
+        </svg>
+        <canvas class="canvas" id="myCanvas" width="800" height="200"></canvas>
+        <script>
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+
+            // Початкові координати об'єкту
+            let x = canvas.width / 2;
+            let y = canvas.height / 2;
+
+            // Функція для малювання об'єкту (кола)
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.beginPath();
+                ctx.arc(x, y, 30, 0, Math.PI * 2);
+                ctx.fillStyle = 'blue';
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            // Функція для оновлення координат об'єкту
+            function updatePosition(event) {
+                x = event.clientX - canvas.getBoundingClientRect().left;
+                y = event.clientY - canvas.getBoundingClientRect().top;
+            }
+
+            // Встановлюємо обробник подій для миші
+            canvas.addEventListener('mousemove', updatePosition);
+
+            // Анімація: оновлення та малювання сцени кожний кадр
+            function animate() {
+                requestAnimationFrame(animate);
+                draw();
+            }
+
+            // Запускаємо анімацію
+            animate();
+        </script>
     </div>
 </div>
 
