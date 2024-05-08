@@ -1,0 +1,87 @@
+body {
+    background-image: url(https://kartinki.pics/uploads/posts/2022-12/thumbs/1669935685_4-kartinkin-net-p-fon-dlya-saita-svetlii-vkontakte-4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.div1{
+    background-color: #007bff;
+    text-align:right;
+}
+
+.span1{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3px 5px;
+}
+
+.a1{
+    padding-right: 20px;
+    padding: 2px 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.a1:hover{
+    color: black;
+}
+
+p.p2 {
+    font-size: 50px;
+    padding: 30px 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(0, 68, 156);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header, nav, aside, main, section, article, footer {
+    display: block;
+}
+
+header{
+    background-color: rgba(255, 234, 0, 0.949);
+}
+
+nav{
+    background-color: white;
+    margin-top: auto;
+}
+
+ul{
+    display: flex;
+    margin-top: auto;
+}
+
+.li1{
+    list-style: none;
+    font-size: 24px;
+    color: black;
+
+}
+
+.a1a1{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    display: block;
+    padding: 10px 25px;
+}
+
+.a1a1:hover{
+    color: black;
+    background-color: rgb(221, 221, 221);
+}
+
+.white-block{
+    background-color: white;
+    border: 2px double black;
+    margin: 50px;
+}
+
