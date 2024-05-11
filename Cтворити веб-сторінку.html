@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вітання, webdesign!</title>
+    <title>Практична робота №1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body >
+<header class="div1">
+    <span class="span1" title="Обліковий запис GitHub Ковіта Дмитро Володимирович"><a href="https://github.com/KovitaDmytro/practical-work" target="_blank" class="a1">Ковіта Дмитро Володимирович</a></span>
+</header>
+<header>
+    <p class="p2">Практичні роботи з Основ WEB-дизайну</p>
+</header>
+<nav>
+    <ul>
+        <li class="li1"><a href="information-html.html" class="a1a1">HTML</a></li>
+        <li class="li1"><a href="information-css.html" class="a1a1" id="css1234">CSS</a></li>
+        <li class="li1"><a href="information-js.html" class="a1a1" id="js1234">JavaScript</a></li>
+    </ul>
+</nav>
+<div class="div-block">
     <p style="color: blue; background-color: yellow; font-size: 50px; "> Ми вивчаємо webdesign.</p>
  <hr style="height: 2cm; background-color: #ff0000;"/>
  <hr style="height: 2cm; background-color: rgb(255, 255, 0);"/>
@@ -15,5 +32,96 @@
  <hr style="height: 2cm; background-color: rgb(255, 255, 0);"/>
  <p style="color: black;background-color: red ; font-size: 100px ;"> Webdesign</p>
  <hr style="height: 2cm; background-color: rgb(25, 0, 255);"/>
+    </div>
+<style>
+    body {
+        background-image: url(https://kartinki.pics/uploads/posts/2022-12/thumbs/1669935685_4-kartinkin-net-p-fon-dlya-saita-svetlii-vkontakte-4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        margin: auto;
+    }
+
+    .div1{
+        background-color: #007bff;
+        text-align:right;
+    }
+
+    .span1{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 3px 5px;
+    }
+
+    .a1{
+        padding-right: 20px;
+        padding: 2px 10px;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .a1:hover{
+        color: black;
+    }
+
+    p.p2 {
+        font-size: 50px;
+        padding: 30px 150px;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: rgb(0, 68, 156);
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    header, nav, aside, main, section, article, footer {
+        display: block;
+    }
+
+    header{
+        background-color: rgba(255, 234, 0, 0.949);
+    }
+
+    nav{
+        background-color: white;
+        margin-top: auto;
+    }
+
+    ul{
+        display: flex;
+        margin-top: auto;
+    }
+
+    .li1{
+        list-style: none;
+        font-size: 24px;
+        color: black;
+
+    }
+
+    .a1a1{
+        text-decoration: none;
+        color: rgb(77, 77, 77);
+        display: block;
+        padding: 10px 25px;
+    }
+
+    .a1a1:hover{
+        color: black;
+        background-color: rgb(221, 221, 221);
+    }
+
+    .div-block{
+        background-color: white;
+        border: 1px solid black;
+        width: 95%;
+        height: auto;
+        margin: 30px;
+    }
+</style>
 </body>
 </html>
