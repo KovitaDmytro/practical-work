@@ -1,20 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var css12345 = document.getElementById('css12345');
-    var js12345 = document.getElementById('js12345');
-
-
-    css12345.addEventListener('click', function(event) {
-       event.preventDefault();
-       alert('Вибачте, ця сторінка поки не готова!');
-    });
-
-    js12345.addEventListener('click', function(event) {
-       event.preventDefault();
-       alert('Вибачте, ця сторінка поки не готова!');
-    });
-});
-
-
 function sayHello() {
     let name = document.getElementById("name").value;
     alert(`Привіт, ${name}!`);
