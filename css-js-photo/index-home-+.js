@@ -9,7 +9,7 @@ function checkCode() {
     }
 }
 
-//--home.html--//
+/*//--home.html--//
 var css1234 = document.getElementById('css1234');
 
 css1234.addEventListener('click', function(event) {
@@ -18,7 +18,7 @@ css1234.addEventListener('click', function(event) {
 });
 
 
-/*var link9 = document.getElementById('practice11');
+var link9 = document.getElementById('practice11');
 
 link9.addEventListener('click', function(event) {
    event.preventDefault();
