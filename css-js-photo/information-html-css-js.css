@@ -24,12 +24,15 @@ body {
     text-decoration: none;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 
 .a1:hover{
     color: black;
+}
+
+.div2{
+    background-color: rgba(255, 234, 0, 0.949);
 }
 
 p.p2 {
@@ -40,12 +43,7 @@ p.p2 {
     color: rgb(0, 68, 156);
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
-}
-
-.div2{
-    background-color: rgba(255, 234, 0, 0.949);
 }
 
 .div3{
@@ -63,7 +61,6 @@ ul{
     list-style: none;
     font-size: 24px;
     color: black;
-
 }
 
 .a1a1{
@@ -78,13 +75,69 @@ ul{
     background-color: rgb(221, 221, 221);
 }
 
-.div4{
+.div-block-3{
+
+
+}
+
+.nav-block {
+    background-color: #aaaaaa;
+
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+@media (min-width: 772px) {
+    .col-md-2 {
+        width: 17%;
+    }
+}
+
+@media (min-width: 772px) and (max-width: 992px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+.nav-block a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.nav-block a:hover{
+    color: white;
+    background-color: blue;
+}
+
+.h3-3{
+    text-align: center;
+}
+
+.div-22{
+    width: 100%;
     background-color: white;
-    width: 50%;
-    margin: auto;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    float: right;
+    margin-top: 192px;
+    position: fixed;
+    margin-left: 17%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .div-22 {
+        width: 80.333333%;
+    }
 }
 
 h1,h2{
@@ -104,10 +157,71 @@ code{
     background-color: rgb(0, 0, 0);
     margin: 10px 10px;
     border: 2px double grey;
+    height: max-content;
 }
 
 .div-output{
     background-color: rgb(255, 255, 255);
     margin: 10px 10px;
     border: 2px double black;
+}
+
+.h2-html{
+    text-align: left;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.button-58 {
+    margin: 10px;
+                                                       align-items: center;
+                                                       background-color: #06f;
+                                                       border: 2px solid #06f;
+                                                       box-sizing: border-box;
+                                                       color: #fff;
+                                                       cursor: pointer;
+                                                       display: inline-flex;
+                                                       fill: #000;
+                                                       font-family: Inter,sans-serif;
+                                                       font-size: 16px;
+                                                       font-weight: 600;
+                                                       height: 48px;
+                                                       justify-content: center;
+                                                       letter-spacing: -.8px;
+                                                       line-height: 24px;
+                                                       min-width: 140px;
+                                                       outline: 0;
+                                                       padding: 0 17px;
+                                                       text-align: center;
+                                                       text-decoration: none;
+                                                       transition: all .3s;
+                                                       user-select: none;
+                                                       -webkit-user-select: none;
+                                                       touch-action: manipulation;
+                                                   }
+
+.button-58:focus {
+    color: #171e29;
+}
+
+.button-58:hover {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+.button-58:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+@media (min-width: 768px) {
+    .button-58 {
+        min-width: 170px;
+    }
+}
+
+h4{
+    margin: 5px 20px;
 }
