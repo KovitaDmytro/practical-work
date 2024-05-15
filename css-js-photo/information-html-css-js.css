@@ -52,7 +52,7 @@ p.p2 {
     margin-bottom: auto;
 }
 
-ul{
+.ul-11{
     display: flex;
     margin-top: auto;
 }
@@ -155,6 +155,18 @@ ul .li-22{
     padding: 5px;
     list-style: none;
 }
+
+.css-properties {
+    list-style-type: none;
+    padding: 0;
+}
+
+.css-properties li {
+    margin-bottom: 5px; /* Додайте відступ між елементами списку */
+}
+
+
+
 
 code{
     color: white;
