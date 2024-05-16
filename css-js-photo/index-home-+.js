@@ -50,7 +50,7 @@ var link9 = document.getElementById('practice15');
 
 link9.addEventListener('click', function(event) {
    event.preventDefault();
-   alert('Вибачте, ця сторінка поки не готова!');
+   alert('Вибачте, ця сторінка не працює. Перейдіть на сторінки "HTML", "CSS" та "JavaScript".');
 });
 
 
