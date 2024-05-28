@@ -75,10 +75,7 @@ p.p2 {
     background-color: rgb(221, 221, 221);
 }
 
-.div-block-3{
 
-
-}
 
 .nav-block {
     background-color: #aaaaaa;
@@ -95,7 +92,7 @@ p.p2 {
     }
 }
 
-@media (min-width: 772px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 997px) {
     .hidden-sm {
         display: none !important;
     }
@@ -136,7 +133,7 @@ p.p2 {
 
 @media (min-width: 992px) {
     .div-22 {
-        width: 80.333333%;
+        width: 83.3333333%;
     }
 }
 
